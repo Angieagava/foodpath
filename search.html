@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Foodpath">
+        <title>Footpath</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!--basic css-->
+        <link href="style.css" rel="stylesheet" src="style.css">
+    <!--bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/511155ee61.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body class="d-flex h-100">
+        <div class="container">
+<!--header-->
+            <header class="my-4 text-center d-flex justify-content-center float-md-middle">
+                <div >
+                  <a class="float-md-middle mb-0 logo"><img src="images/logosmall.png" alt="logo">foodpath</a>
+                  <nav class="nav nav-masthead">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About App</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link actives" href="search.html">Search</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link signup" href="signup.html">Signup/Login</a>
+                </div>
+                  </nav>
+            </header>
+<!--seaech-->
+            <div class="container search">
+                <div class="row g-3 mt-4">
+                    <h3 class="margin-top text-center">Where are you?</h3>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary w-100" data-bs-toggle="tooltip" data-bs-placement="bottom" title="find me">
+                            <i class="fa-solid fa-location-dot"></i>  Localize me
+                        </button>
+                    </div>
+                    <div class="col">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Country">
+                        <datalist id="datalistOptions">
+                          <option value="Country_1"></option>
+                          <option value="Country_2"></option>
+                          <option value="Country_3"></option>
+                          <option value="Country_4"></option>
+                          <option value="Country_5"></option>
+                        </datalist>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="State" aria-label="State">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Street" aria-label="Street">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Number" aria-label="Number">
+                    </div>
+                </div>
+            </div>
+<!--food_icons nav-->
+            <div class="container">
+                <div class="row g-3 my-4">
+                    <h3 class="text-center">Choose your craving:</h3>
+                    <nav class="nav nav-masthead justify-content-center float-md-middle">
+                    <a class="nav-link active food text-center" href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="nav-link food text-center active" href="#"><img src="images/pizza.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/hamburger.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/taco.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/ramen.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/salad.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/kebab.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/pancake.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/croissant.svg"/></a>
+                    <a class="nav-link food text-center activee" href="#"><img src="images/chicken.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/hot-dog.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/meat.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/fish.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/alco.svg"/></a>
+                <!--
+                    <a class="nav-link food text-center" href="#"><img src="images/coffee.svg"/></a>
+                    <a class="nav-link food text-center" href="#"><img src="images/cake.svg"/></a>
+                -->
+                    <a class="nav-link food text-center" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                  </nav>
+                </div>
+            </div>
+<!--left choices-->
+            <div class="container">
+            <div class="row g-3 my-4">
+                <div class="col-3  p-4">
+                    <!--distance-->
+                    <div class="searching user_choice mt-3">
+                        <h3>Your choices</h3>
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Less than 1km</label>
+                        </div>
+                        <!--restrictions-->
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Gluten-free</label>
+                        </div>
+                        <!--price-->
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">$</label>
+                        </div>
+                        <!--rating-->
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked"> 
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>                      
+                            </label>
+                        </div>
+                        <!--hours-->
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">10-18:00</label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Italian</label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Card/Cash</label>
+                        </div>
+                        <div class="form-check py-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Breakfast/Dinner/Supper</label>
+                        </div>
+                    </div>
+                    <div class="searching mt-3">
+                        <h3>Distance</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Less than 1km</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">1-3km walk</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">3-5km walk</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">more than 5km walk</label>
+                        </div>
+                    </div>
+                    <div class="searching mt-3">
+                        <h3>Restrictions</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Gluten-free</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Lactose-free</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Vegan</label>
+                        </div>
+                    </div>
+                     <div class="searching mt-3">
+                        <h3>Price</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">$</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">$$</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">$$$</label>
+                        </div>
+                    </div>
+                     <div class="searching mt-3">
+                        <h3>Rating</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1"> 
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>                      
+                          </label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i> 
+                          </label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i> 
+                          </label>
+                        </div>
+                    </div>
+                    <div class="searching mt-3">
+                        <h3>Hours</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">24H</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">10-18:00</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Open now</label>
+                        </div>
+                    </div>
+                    <div class="searching ">
+                        <h3 class="my-3">Type of kitchen</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">American</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">British</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Chinese</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">French</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Greek</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Mexican </label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Polish </label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Thai </label>
+                        </div>
+                    </div>
+                    <div class="searching mt-3">
+                        <h3>Payment</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Card</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Cash</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Phone</label>
+                        </div>
+                    </div>
+                    <div class="searching mt-3">
+                        <h3>Meal</h3>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Breakfast</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Lunch</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Dinner</label>
+                        </div>
+                        <div class="form-check py-1">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Supper</label>
+                        </div>
+                    </div>
+                </div>
+<!--right cards top-->
+                <div class="col descriptions">
+                    <div class="row g-0 d-flex justify-content-between">
+                        <h3 class="text-center mt-4">Best Restaurants</h3>
+                        <div class="card" style="width: 18rem;">
+                            <div class ="pexels1"></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Frisk</strong> Restaurant</h5>
+                                <p class="card-text">Comfortable, brasserie-style restaurant offering everything you love about cuisine without the attitude. Features classic dishes, as well as fresh salads and juicy hamburgers made with fresh-ground beef.</p>
+                                <a href="restaurant.html" class="btn btn-primary">Show more</a>
+                              </div>
+                        </div>
+                        <div class="card mx-2" style="width: 18rem;">
+                            <div class ="pexels2"></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Ether</strong> Restaurant</h5>
+                                <p class="card-text">Specializes in delicious food featuring fresh ingredients and masterful preparation by the our culinary team. Whether you’re ordering a multi-course meal or grabbing a drink and pizza at the bar, casual yet upscale atmosphere.</p>
+                                <a href="restaurant.html" class="btn btn-primary">Show more</a>
+                              </div>
+                        </div>
+                        <div class="card mx-2" style="width: 18rem;">
+                            <div class ="pexels3"></div>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Seasoner</strong> Restaurant</h5>
+                                <p class="card-text"> Our signature recipe, that we have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with signature herb-garlic butter, then carved tableside.</p>
+                                <a href="restaurant.html" class="btn btn-primary">Show more</a>
+                              </div>
+                        </div>
+                        <nav aria-label="navigation my-4">
+                          <ul class="pagination justify-content-center pagination-lg">
+                            <li class="page-item">
+                              <a class="page-link"><i class="fa-solid fa-angle-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+<!--right card bottom-->
+<!--first card-->
+                    <div class="card my-4-3">
+                      <div class="row g-0">
+                        <div class="col-md-4 pexels4">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <!--distance-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Less than 1km</label>
+                                    </div>
+                                    <!--restrictions-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Gluten-free</label>
+                                    </div>
+                                    <!--price-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">$</label>
+                                    </div>
+                                    <!--rating-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>                      
+                                        </label>
+                                    </div>
+                                    <!--hours-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">10-18:00</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Italian</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Card/Cash</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Breakfast/Dinner/Supper</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title">Restaurant <strong>Toscana</strong></h5>
+                                    <p class="card-text">Bar and Restaurant, established in 2000, is the flagship of the Restaurant Group. The kitchen is overseen by Chef de Cuisine who works closely with local farmers and fishermen, offering contemporary, seasonal local cuisine with elements of rustic Italian cooking. An eclectic wine list and a knowledgeable staff make for perfect pairings.</p>
+                                    <a href="restaurant.html" class="btn btn-primary">Full profile</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!--second card-->
+                    <div class="card my-4">
+                      <div class="row g-0">
+                        <div class="col-md-4 pexels5">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <!--distance-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Less than 1km</label>
+                                    </div>
+                                    <!--restrictions-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Gluten-free</label>
+                                    </div>
+                                    <!--price-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">$</label>
+                                    </div>
+                                    <!--rating-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>                      
+                                        </label>
+                                    </div>
+                                    <!--hours-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">10-18:00</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Italian</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Card/Cash</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Breakfast/Dinner/Supper</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title">Restaurant <strong>Kunig</strong></h5>
+                                    <p class="card-text">We are a tight-knit, fun-loving, devoted team of local cooks spreading the gospel of good times and good food.  We offer limited capacity onsite events in our restaurant kitchen space. We cook, we tell stories, we deliver informative culinary demonstrations and lectures, but most of all … we treat every event like you’re a guest at our dinner table.</p>
+                                    <a href="restaurant.html" class="btn btn-primary">Full profile</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!--third card-->
+                    <div class="card my-4">
+                      <div class="row g-0">
+                        <div class="col-md-4 pexels6">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <!--distance-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Less than 1km</label>
+                                    </div>
+                                    <!--restrictions-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Gluten-free</label>
+                                    </div>
+                                    <!--price-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">$</label>
+                                    </div>
+                                    <!--rating-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>                      
+                                        </label>
+                                    </div>
+                                    <!--hours-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">10-18:00</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Italian</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Card/Cash</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Breakfast/Dinner/Supper</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title">Restaurant <strong>Fareast</strong></h5>
+                                    <p class="card-text"> Combined flavors & inspiration from the Far East & the West to create what we think is the best! Home to the original recipes, we specialize in pizzas, as well as handmade appetizers, sandwiches, salads, and gluten friendly, vegetarian, & vegan selections. Feel free to indulge in a tiki drink or craft beer with our fantastic unique cuisine.</p>
+                                    <a href="restaurant.html" class="btn btn-primary">Full profile</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!--fourth card-->
+                    <div class="card my-4">
+                      <div class="row g-0">
+                        <div class="col-md-4 pexels7">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <!--distance-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Less than 1km</label>
+                                    </div>
+                                    <!--restrictions-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Gluten-free</label>
+                                    </div>
+                                    <!--price-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">$</label>
+                                    </div>
+                                    <!--rating-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked"> 
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>                      
+                                        </label>
+                                    </div>
+                                    <!--hours-->
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">10-18:00</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Italian</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Card/Cash</label>
+                                    </div>
+                                    <div class="form-check py-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">Breakfast/Dinner/Supper</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title">Restaurant <strong>Variety</strong></h5>
+                                    <p class="card-text">All of our menu items are inspired by american authentic cuisine. Not only do we have fresh flown-in seafood from the northeast, but we also have a variety of handcrafted cocktails, wine, and beer to choose from. Come dine with us & experience an authentic meal in an intimate dining space</p>
+                                    <a href="restaurant.html" class="btn btn-primary">Full profile</a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!--pagination-->
+                    <nav aria-label="navigation my-4">
+                      <ul class="pagination justify-content-center pagination-lg">
+                        <li class="page-item">
+                          <a class="page-link"><i class="fa-solid fa-angle-left"></i></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+             </div>
+<!--footer-->
+
+    <footer class="text-center w-100">
+      <p> @allrightsreserved - Foodpath</p>
+    </footer>
+        </div>
+    </body>
+</html>
