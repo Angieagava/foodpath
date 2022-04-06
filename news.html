@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet">
     <!--basic css-->
-        <link href="style.css" rel="stylesheet">
+        <link id="pagestyle" href="light.css" rel="stylesheet" type="text/css" />
     <!--bootstrap-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -26,7 +26,9 @@
         <div class="container">
             <header class="my-4">
                 <div>
-                    <a class="float-md-middle mb-0 logo"><img src="images/logosmall.png" alt="logo">foodpath</a>
+                    <a class="float-md-middle mb-0 logo" href="index.html">
+                      <img src="images/logosmall.png" alt="logo">foodpath
+                    </a>
                     <nav class="nav nav-masthead justify-content-center float-md-middle">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="about.html">About App</a>
@@ -34,6 +36,12 @@
                          <a class="nav-link" href="search.html">Search</a>
                         <a class="nav-link actives" href="contact.html">Contact</a>
                         <a class="nav-link signup" href="signup.html">Signup/Login</a>
+                        <div class="btn-group ml-2">
+                        <button id="lightpg" onclick="initate();" class="btn btn-outline-light switch" title="light mode">
+                          <i class="fa-solid fa-sun"></i></button>
+                        <button id="darkpg" onclick="initate();" class="btn btn-outline-dark switch" title="dark mode">
+                          <i class="fa-solid fa-moon"></i></a>
+                      </div>
                     </nav>
                 </div>
             </header>

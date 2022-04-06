@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;600;700&display=swap" rel="stylesheet">
     <!--basic css-->
-        <link href="style.css" rel="stylesheet" src="style.css">
+        <link id="pagestyle" href="light.css" rel="stylesheet" type="text/css" />
     <!--bootstrap-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -27,21 +27,28 @@
 <!--header-->
             <header class="my-4 text-center d-flex justify-content-center float-md-middle">
                 <div >
-                  <a class="float-md-middle mb-0 logo"><img src="images/logosmall.png" alt="logo">foodpath</a>
-                  <nav class="nav nav-masthead">
+                    <a class="float-md-middle mb-0 logo" href="index.html">
+                      <img src="images/logosmall.png" alt="logo">foodpath
+                    </a>
+                <nav class="nav nav-masthead">
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link" href="about.html">About App</a>
                     <a class="nav-link" href="blog.html">Blog</a>
                     <a class="nav-link actives" href="search.html">Search</a>
                     <a class="nav-link" href="contact.html">Contact</a>
                     <a class="nav-link signup" href="signup.html">Signup/Login</a>
+                    <div class="btn-group ml-2">
+                        <button id="lightpg" onclick="initate();" class="btn btn-outline-light switch" title="light mode">
+                          <i class="fa-solid fa-sun"></i></button>
+                        <button id="darkpg" onclick="initate();" class="btn btn-outline-dark switch" title="dark mode">
+                          <i class="fa-solid fa-moon"></i></a>
+                      </div>
                 </div>
                   </nav>
             </header>
 <!--seaech-->
             <div class="container search">
                 <div class="row g-3 mt-4">
-                    <h3 class="margin-top text-center">Where are you?</h3>
                     <div class="col">
                         <button type="button" class="btn btn-secondary w-100" data-bs-toggle="tooltip" data-bs-placement="bottom" title="find me">
                             <i class="fa-solid fa-location-dot"></i>  Localize me
@@ -103,7 +110,7 @@
             <div class="row g-3 my-4">
                 <div class="col-3  p-4">
                     <!--distance-->
-                    <div class="searching user_choice mt-3">
+                    <div class="user_choice mt-3 p-2">
                         <h3>Your choices</h3>
                         <div class="form-check py-1">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -317,7 +324,7 @@
                     <div class="row g-0 d-flex justify-content-between">
                         <h3 class="text-center mt-4">Best Restaurants</h3>
                         <div class="card" style="width: 18rem;">
-                            <div class ="pexels1"></div>
+                            <div class ="photobg pexels1"></div>
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Frisk</strong> Restaurant</h5>
                                 <p class="card-text">Comfortable, brasserie-style restaurant offering everything you love about cuisine without the attitude. Features classic dishes, as well as fresh salads and juicy hamburgers made with fresh-ground beef.</p>
