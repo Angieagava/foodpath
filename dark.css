@@ -17,10 +17,18 @@ body {
   background:  var(--main-accent-color)!important;
   color: var(--main-dark-color);
 }
+ 
+
+ /*TEXT*/
 
 p {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+input .form-control {
+  font-size: 1.25rem!important;
+  font-weight: 400; 
 }
 
 /*BUTTON*/
@@ -320,11 +328,14 @@ a.logo {
   height: 2rem;
   color: var(--main-light-color);
   text-decoration: none;
-  font-size:  2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
 }
 
 a.logo img {
   filter: invert(100%);
+  height:  2rem;
 }
 
 .border {

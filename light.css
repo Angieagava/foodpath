@@ -17,9 +17,16 @@ body {
   background:  var(--main-accent-color)!important;
 }
 
+ /*TEXT*/
+
 p {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+input .form-control {
+  font-size: 1.25rem;
+  font-weight: 400; 
 }
 
 
@@ -285,10 +292,15 @@ a.nav-link:hover {
 }
 
 a.logo {
-  height: 2rem;
   color: var(--main-dark-color);
   text-decoration: none;
-  font-size:  2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+}
+
+a.logo img {
+  height:  2rem;
 }
 
 .border {
