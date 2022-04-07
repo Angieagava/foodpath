@@ -478,8 +478,40 @@ a.nav-link.food.text-center.activee img {
   border-radius: 5px 0 0 5px;
 }
 
-.meal-pic {
-  background: url('images/meal.jpg');
+.restaurant1 {
+  background: url('images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  margin:  5px;
+}
+
+.restaurant2 {
+  background: url('images/plate.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  margin:  5px;
+}
+
+.restaurant3 {
+  background: url('images/plate1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  margin:  5px;
+}
+
+.restaurant4 {
+  background: url('images/table.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+  margin:  5px;
+}
+
+.restaurant5 {
+  background: url('images/coffee.jpg');
   background-size: cover;
   background-position: center;
   height: 15rem;
