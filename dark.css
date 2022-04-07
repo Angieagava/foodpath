@@ -167,7 +167,8 @@ i:hover {
 }
 
 .card-body {
-  background-color: var(--main-dark-color)
+  background-color: var(--main-dark-color);
+  height: 100%;
 }
 
 .card .newscard {
