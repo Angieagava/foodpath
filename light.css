@@ -53,6 +53,15 @@ body {
   color: var(--main-accent-color); 
 }
 
+.accent .intro {
+  background-color: var(--main-dark-color);
+  color: var(--main-accent-color);
+}
+.accent .intro:hover {
+  background-color: var(--main-accent-color);
+  color: var(--main-dark-color);
+}
+
 .login {
   color:  var(--main-dark-color);
   display: block;
