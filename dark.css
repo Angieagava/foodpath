@@ -18,6 +18,11 @@ body {
   color: var(--main-dark-color);
 }
 
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 /*BUTTON*/
 
 i:hover {
@@ -173,18 +178,6 @@ i:hover {
 
 .card .newscard {
   background-color: var(--main-dark-color);
-}
-
-.card_image_1 {
-  background: url('images/light.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.card_image_2 {
-  background: url('images/dark.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-grey {
@@ -389,6 +382,24 @@ a.nav-link.food.text-center.activee img {
 
 .img-thumbnail {
   max-height:  200px;
+}
+
+.about_1 {
+  background: url('images/3views.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  margin:  5vh auto;
+}
+
+.about_2 {
+  background: url('images/group.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  margin:  5vh auto;
 }
 
 .photo {
