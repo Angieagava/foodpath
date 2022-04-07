@@ -13,6 +13,10 @@ body {
   background-position: initial;
 }
 
+.accent {
+  background:  var(--main-accent-color)!important;
+}
+
 /*BUTTON*/
 
 i:hover {
@@ -516,6 +520,24 @@ a.nav-link.food.text-center.activee img {
   background-position: center;
   height: 15rem;
   margin:  5px;
+}
+
+.service1 {
+  background: url('images/service4.jpg');
+  background-size: cover;
+  background-position: center;
+  width:  100%;
+  height: 20rem;
+  border-radius:  5px;
+}
+
+.service4 {
+  background: url('images/service2.jpg');
+  background-size: cover;
+  background-position: center;
+  width:  100%;
+  height: 20rem;
+  border-radius:  5px;
 }
 
 .map {
