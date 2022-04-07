@@ -15,6 +15,7 @@ body {
 
 .accent {
   background:  var(--main-accent-color)!important;
+  color:  var(--main-dark-color);
 }
 
 /*BUTTON*/
