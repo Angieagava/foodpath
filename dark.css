@@ -206,14 +206,22 @@ i:hover {
 }
 
 .news_desciption {
-  background: var(--main-dark-color);
+  background: var(--main-light-color);
   font-size: 1.4rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   font-weight: 300;
   margin: 2rem;
-  color: var(--main-light-color);
+  max-width:  80%;
+  margin:  0 auto;
+  color: var(--main-dark-color);
 }
 
+.foodie_desc {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
 
 
   /*CAROUSEL*/
