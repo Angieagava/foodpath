@@ -207,6 +207,11 @@ input .form-control {
 }
 
 
+.faces {
+  background: var(--main-light-color);
+}
+
+
 
   /*CAROUSEL*/
 .carousel-caption {

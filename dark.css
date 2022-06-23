@@ -206,14 +206,14 @@ i:hover {
 }
 
 .news_desciption {
-  background: var(--main-light-color);
+  background: var(--main-dark-color);
   font-size: 1.4rem;
   line-height: 2.5rem;
   font-weight: 300;
   margin: 2rem;
   max-width:  80%;
   margin:  0 auto;
-  color: var(--main-dark-color);
+  color: var(--main-light-color);
 }
 
 .foodie_desc {
@@ -221,6 +221,11 @@ i:hover {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background: var(--main-dark-color);
+}
+
+.faces {
+  background: var(--main-dark-color);
 }
 
 
